@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase démo</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="bundle.js"></script>
+</head>
+<body>
+    <h1>Factures</h1>
+    <form id="addFacture">
+        <div>
+            <label for="number">Numéro</label>
+            <input 
+                type="text" 
+                name="number" 
+                id="number" 
+                placeholder="Entrez le numéro de la facture" 
+            />
+        </div>
+        <div>
+            <label for="status">Status</label>
+            <select
+                name="status"
+                id="status"
+            >
+                <option value="">Choisissez un status</option>
+                <option value="A payer">A payer</option>
+                <option value="Payé">Payé</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit">Enregister</button>
+        </div>
+    </form>
+
+    <ul id="listFactures">
+
+    </ul>
+</body>
+</html>
